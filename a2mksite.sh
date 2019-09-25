@@ -27,6 +27,7 @@ switch($_option){
     create_vhost( $_username, $_thedomain, 'https');
     break;
 }
+system("systemctl reload apache2");
 
 function create_vhost( $_username, $_thedomain, $mode = 'apache')
 {
