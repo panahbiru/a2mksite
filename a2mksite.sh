@@ -46,5 +46,5 @@ function create_vhost( $_username, $_thedomain, $mode = 'apache')
   fwrite($files, $vhost);
   fclose($files);
 
-  echo "Successfully create $_thedomain.conf\n";
+  echo "Successfully create $_thedomain.conf\n\n";
 }
